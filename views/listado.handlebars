@@ -1,0 +1,21 @@
+<h2>Listado de artistas</h2>
+
+<a href="/alta">Agregar Artista </a>
+
+<table class="table">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+    </tr>
+    {{#each listado}}
+    <tr>
+        <td>{{this.nombre}} </td>
+        <td>{{this.apellido}}</td>
+        <td> <a href="/borrar/{{this._id}}" class type="button"> borrar </a></td>
+        <td> <a href="/editar/{{this._id}}" class type="button"> editar </a></td>
+    </tr>
+
+    {{/each}}
+
+
+</table>

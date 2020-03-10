@@ -1,0 +1,17 @@
+<!-- si saco action="/alta puedo usarlo para ata y editar-->
+{{error}}
+<form  method="POST"> <!--action="/alta" -->
+    <div class="form-control">
+        <label for="name">Nombre</label>
+        <input type="text" name="nombre"  value="{{datos.nombre}}">
+        </br>
+    </div>
+    <div class="form-control">
+        <label for="surname">Apellido</label>
+        <input type="text" name="apellido" value="{{datos.apellido}}">
+    </div>
+    <button type="submit">
+        Guardar 
+    </button>
+</form>
+<!--esto es lo que devuelve el navegador a express-->
